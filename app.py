@@ -17,26 +17,17 @@ class Trail(db.Model):
 
 @app.route('/')
 def hello():
-    # ORM Practice
-    """ 
-    print("Total number of trails is", Trail.query.count())
-
-    trail = Trail.query.filter_by(TRAIL_ID='240 -34').first()
-    print("Trail's name is", trail.PMA_NAME)
-
-    """
-    
     trailCount = Trail.query.count()
 
     good_trails = Trail.query.filter_by(CONDITION='Good').all()
 
-    return render_template("index.html", count = trailCount, trails=good_trails)
+    return render_template("index.html", count=trailCount, trails=good_trails)
 
 @app.route('/trails/<slug>')
 def detail(slug):
     trail = Trail.query.filter_by(TRAIL_ID=slug).first()
 
-    return trail.PMA_NAME
+    return render_template("detail.html", trail=trail)
 
 if __name__=='__main__':
     app.run(debug=True)
