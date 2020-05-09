@@ -11,12 +11,21 @@
       <div class="jumbotron">
         <div class="container">
           <h1 class="display-4">This is <strong>BestTreks</strong></h1>
-          <p class="lead">Never take a bad hike again.</p>
+          <p class="lead">Never take a bad hike again.</p><br>
+          <p>There are {{ "{:,}".format(count)}} trails on BestTrails so far.</p>
         </div>
       </div>
       <div class="container">
-        <p>Local Trails recommended by current conditions</p><br>
+        <p>Local Trails recommended by current conditions</p>
         <p>Don't let rain ruin your day out</p>
+      </div>
+      <div class="container">
+        <br>
+        <p><strong>Good Trails</strong></p>
+
+        {% for trail in trails %}
+          <p>{{ trail.TRAIL_ID }} {{ trail.PMA_NAME }}</p>
+        {% endfor %}
       </div>
     </div>
   </body>
