@@ -40,7 +40,7 @@ The webpage is now available at http://127.0.0.1:5000/
 
 * **Jacob Petersen** - *Initial work* - [jpeter17](https://github.com/jpeter17)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/jpeter17/BestTrek/contributors) who participated in this project.
 
 ## License
 
