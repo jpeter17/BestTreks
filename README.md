@@ -40,7 +40,7 @@ The webpage is now available at http://127.0.0.1:5000/
 
 * **Jacob Petersen** - *Initial work* - [jpeter17](https://github.com/jpeter17)
 
-See also the list of [contributors](https://github.com/jpeter17/BestTrek/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/jpeter17/BestTreks/contributors) who participated in this project.
 
 ## License
 
@@ -48,5 +48,5 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ## Acknowledgments
 
-* [Jonathan Soma](http://jonathansoma.com/) - Flask tutorial 
 * Seattle Parks and Recreation - GIS Map Layer Shapefile - Trails
+* [Jonathan Soma](http://jonathansoma.com/) - Flask tutorials
